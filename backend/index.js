@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
+// POST api accessed by localhost:3001/authenticate
 app.post("/authenticate", async (req, res) => {
   const { username } = req.body;
   try{
